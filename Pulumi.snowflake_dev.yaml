@@ -1,0 +1,7 @@
+config:
+  snowflake:account: au29517.ap-southeast-1
+  snowflake:password:
+    secure: AAABAPL2vzZUF+/iIFbkmc3VgvawAwHDEPZasznLPd1RfGHK7pjW7g==
+  snowflake:region: ""
+  snowflake:user: adityavcse
+  snowflake:username: adityavcse
