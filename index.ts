@@ -1,6 +1,6 @@
 import {
 //    createSnowflakeAccountParameters,
-//    createSnowflakeDatabaseGrants,
+    createSnowflakeDatabaseGrants,
     createSnowflakeDatabases,
 //    createSnowflakePasswordPolicy,
 //    createSnowflakeRoleHierarchy,
@@ -12,6 +12,7 @@ import {
 
 createSnowflakeDatabases();
 createSnowflakeRoles();
+createSnowflakeDatabaseGrants();
 
 
 
