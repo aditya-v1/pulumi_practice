@@ -1,17 +1,20 @@
 import {
 //    createSnowflakeAccountParameters,
-//    createSnowflakeDatabaseGrants,
+    createSnowflakeDatabaseGrants,
     createSnowflakeDatabases,
 //    createSnowflakePasswordPolicy,
-//    createSnowflakeRoleHierarchy,
+    createSnowflakeRoleHierarchy,
     createSnowflakeRoles,
 //    createSnowflakeUsers,
-//    createSnowflakeWarehouseGrants,
-//    createSnowflakeWarehouses,
+    createSnowflakeWarehouseGrants,
+    createSnowflakeWarehouses,
 } from "./resources/snowflake/index";
 
 createSnowflakeDatabases();
 createSnowflakeRoles();
-
+createSnowflakeDatabaseGrants();
+createSnowflakeRoleHierarchy();
+createSnowflakeWarehouses();
+createSnowflakeWarehouseGrants();
 
 
