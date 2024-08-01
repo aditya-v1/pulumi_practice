@@ -9,7 +9,7 @@ export enum DatabaseRoleName {
 }
 
 export enum FunctionalRoleName {
-    FivetranRole = "FIVETRAN",
+    //FivetranRole = "FIVETRAN",
     AirflowRole = "AIRFLOW",
     GithubRole = "GITHUB",
     AnalyticsEngineerRole = "ANALYTICS_ENGINEER",

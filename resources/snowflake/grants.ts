@@ -71,13 +71,6 @@ export function createSnowflakeWarehouseGrants(): void {
         WarehouseName.TransformingSmall,
     );
 
-    const dbaRole = getFunctionalRole(FunctionalRoleName.DbaRole);
-    grantWarehouseRole(
-        WarehouseAssociationName.DbaWarehouseTransformingSmall,
-        dbaRole,
-        WarehouseName.TransformingSmall,
-    );
-
 
     const githubRole = getFunctionalRole(FunctionalRoleName.GithubRole);
     grantWarehouseRole(
@@ -111,7 +104,14 @@ export function createSnowflakeRoleHierarchy(): void {
         FunctionalRoleName.AirflowRole,
         FunctionalRoleName.DbaRole,
     ]);
-    //grantDatabaseRoleHierarchy(DatabaseRoleName.AnalyticsRoleRO, [
-    //    FunctionalRoleName.GithubRole,
-    //]);
+    grantDatabaseRoleHierarchy(DatabaseRoleName.AnalyticsRoleRO, [
+        FunctionalRoleName.GithubRole,
+    ]);
+
+    grantDatabaseRoleHierarchy(DatabaseRoleName.StagingRoleRO, [
+        FunctionalRoleName.GithubRole,
+    ]);
     }
+
+
+    
