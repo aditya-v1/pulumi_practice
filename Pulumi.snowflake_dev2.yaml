@@ -1,0 +1,4 @@
+config:
+  snowflake:account: au29517.ap-southeast-1
+  snowflake:password: SFPass1!
+  snowflake:user: adityavcse
